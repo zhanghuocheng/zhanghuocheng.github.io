@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+ - 2.2
+ - jruby
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 7b13ad0cb738c76972a57c59c14edac82e6bf5e4  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
