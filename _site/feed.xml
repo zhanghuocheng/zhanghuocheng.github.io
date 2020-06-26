@@ -1,6 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-26T10:19:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zhanghuocheng.github.io</title><subtitle>运动·生活·计算机技术·哲学·方法论</subtitle><entry><title type="html">Concurrent Atomicinteger线程同步</title><link href="http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html" rel="alternate" type="text/html" title="Concurrent Atomicinteger线程同步" /><published>2019-12-14T00:00:00+08:00</published><updated>2019-12-14T00:00:00+08:00</updated><id>http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5</id><content type="html" xml:base="http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html">&lt;hr /&gt;
-&lt;p&gt;layout: pages
-—&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-27T06:40:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zhanghuocheng.github.io</title><subtitle>运动·生活·计算机技术·哲学·方法论</subtitle><entry><title type="html">Github Gitpages Jekyll 构建blog实战</title><link href="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html" rel="alternate" type="text/html" title="Github Gitpages Jekyll 构建blog实战" /><published>2020-06-27T00:00:00+08:00</published><updated>2020-06-27T00:00:00+08:00</updated><id>http://localhost:4000/2020/06/27/github-gitpages-jekyll%20%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98</id><content type="html" xml:base="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html">&lt;h2 id=&quot;github-gitpages-jekyll-构建blog实战&quot;&gt;github-gitpages-jekyll 构建blog实战&lt;/h2&gt;
+
+&lt;p&gt;[TOC]&lt;/p&gt;
+
+&lt;h2 id=&quot;1-目标-完全免费&quot;&gt;1 目标-完全免费&lt;/h2&gt;
+
+&lt;p&gt;完成一个自己的博客，写完后只需提交，即可触发自动编译部署。&lt;/p&gt;
+
+&lt;p&gt;博客的搭建过程&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;组件&lt;/th&gt;
+      &lt;th&gt;网址&lt;/th&gt;
+      &lt;th&gt;提供的功能&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;github （仓库+action）&lt;/td&gt;
+      &lt;td&gt;https://github.com/&lt;/td&gt;
+      &lt;td&gt;action：持续集成&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;gitpages（域名+服务器）&lt;/td&gt;
+      &lt;td&gt;https://pages.github.com/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;jekyll（网站模版）&lt;/td&gt;
+      &lt;td&gt;https://jekyllrb.com/docs/&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;七牛云&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;辅助，存储图片&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;2-提交blog的过程&quot;&gt;2 提交blog的过程&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sequence&quot;&gt;张火成--&amp;gt;git:写博客/commit
+git--&amp;gt;Action:自动构建并推送
+Action--&amp;gt;gitpages服务器:更新静态页面
+gitpages服务器--&amp;gt;张火成:看到了刚提交的博客
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;3-过程详情&quot;&gt;3 过程详情&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 1 创建一个gitpages 静态站点，配置免费域名
+ https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site
+ 
+ 2 创建一个jekyll项目
+ https://jekyllrb.com/ 
+ 
+ 3 提交到github
+ 
+ 4 配置action
+ https://jekyllrb.com/docs/continuous-integration/buddyworks/
+ 
+ 
+ 以上过程，都要有官方文档，配置简单
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">github-gitpages-jekyll 构建blog实战</summary></entry><entry><title type="html">Concurrent Atomicinteger线程同步</title><link href="http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html" rel="alternate" type="text/html" title="Concurrent Atomicinteger线程同步" /><published>2019-12-14T00:00:00+08:00</published><updated>2019-12-14T00:00:00+08:00</updated><id>http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5</id><content type="html" xml:base="http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html">&lt;p&gt;layout: pages&lt;/p&gt;
 
 &lt;p&gt;concurrent-AtomicInteger线程同步&lt;/p&gt;
 
@@ -80,4 +148,4 @@ unsafe--&amp;gt;&amp;gt;jvm:do while 循环调用指令compareAndSwapInt
 
         return var5;
     }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">layout: pages —</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">layout: pages</summary></entry></feed>
