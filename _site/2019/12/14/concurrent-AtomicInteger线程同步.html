@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Concurrent Atomicinteger线程同步 | zhanghuocheng.github.io</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Concurrent Atomicinteger线程同步" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="layout: pages —" />
+<meta property="og:description" content="layout: pages —" />
+<link rel="canonical" href="http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html" />
+<meta property="og:url" content="http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html" />
+<meta property="og:site_name" content="zhanghuocheng.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-14T00:00:00+08:00" />
+<script type="application/ld+json">
+{"datePublished":"2019-12-14T00:00:00+08:00","dateModified":"2019-12-14T00:00:00+08:00","url":"http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html"},"description":"layout: pages —","@type":"BlogPosting","headline":"Concurrent Atomicinteger线程同步","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css?v=e99c65d0669d9012e346118b826e1d72b51cb1a8">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">zhanghuocheng.github.io</h1>
+      <h2 class="project-tagline">不产生认知，只是认知的搬运工. {bbc纪录片系列，ted演讲系列，图灵系列书（站在巨人的肩上）,奥斯卡经典系列，官方文档}==教父</h2>
+      
+        <a href="https://github.com/zhanghuocheng/zhanghuocheng.github.io" class="btn">View on GitHub</a>
+      
+      
+        <a href="https://github.com/zhanghuocheng/zhanghuocheng.github.io/zipball/gh-pages" class="btn">Download .zip</a>
+        <a href="https://github.com/zhanghuocheng/zhanghuocheng.github.io/tarball/gh-pages" class="btn">Download .tar.gz</a>
+      
+    </section>
+
+    <section class="main-content">
+      
+<hr />
+<p>layout: pages
+—</p>
+
+<p>concurrent-AtomicInteger线程同步</p>
+
+<pre><code class="language-mermaid">sequenceDiagram
+participant 我（软件工程师）
+participant AtomicInteger
+participant unsafe
+participant jvm
+我（软件工程师）--&gt;&gt;AtomicInteger:创建对象，并发调用getAndIncrement
+AtomicInteger--&gt;&gt;unsafe: 传入当前对象，原始值，更改值
+unsafe--&gt;&gt;jvm:do while 循环调用指令compareAndSwapInt
+
+</code></pre>
+
+<p><img src="/Users/huochengzhang/Library/Application Support/typora-user-images/image-20191214154455677.png" alt="image-20191214154455677" /></p>
+
+<h4 id="compareandswapint-这个原子操作的指令实现">compareAndSwapInt 这个原子操作的指令实现</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c/c++ 加上硬件支持的
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class AtomicTest {
+    AtomicInteger atomicInteger = new AtomicInteger(0);
+    static ExecutorService executorService = Executors.newFixedThreadPool(10);
+
+    public static void main(String[] args) {
+        AtomicTest atomicTest = new AtomicTest();
+        for (int i = 0; i &lt; 1000; i++) {
+            executorService.submit(new Runnable() {
+                @Override
+                public void run() {
+
+                    //getAndIncrement() 这个函数怎么实现线程同步的
+                    atomicTest.atomicInteger.getAndIncrement();
+                    System.out.println(atomicTest.atomicInteger.get());
+                }
+            });
+
+        }
+    }
+
+}
+</code></pre></div></div>
+
+<h3 id="getandincrement">getAndIncrement</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   public final int getAndIncrement() {
+        return unsafe.getAndAddInt(this, valueOffset, 1);
+    }
+</code></pre></div></div>
+
+<h4 id="this-当前atomicinteger对象">this 当前AtomicInteger对象</h4>
+
+<h4 id="valueoffset-是获取atomicinteger对象的value通过反射">valueOffset 是获取AtomicInteger对象的value通过反射</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> private static final long valueOffset;
+
+    static {
+        try {
+            valueOffset = unsafe.objectFieldOffset
+                (AtomicInteger.class.getDeclaredField("value"));
+        } catch (Exception ex) { throw new Error(ex); }
+    }
+
+    private volatile int value;
+</code></pre></div></div>
+
+<h3 id="unsafe-class">unsafe class</h3>
+
+<h4 id="通过native-方法compareandswapint-比较并交换-do-while">通过native 方法compareAndSwapInt 比较并交换 do while</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   public final int getAndAddInt(Object var1, long var2, int var4) {
+        int var5;
+        do {
+            var5 = this.getIntVolatile(var1, var2);
+        } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
+
+        return var5;
+    }
+</code></pre></div></div>
+
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/zhanghuocheng/zhanghuocheng.github.io">zhanghuocheng.github.io</a> is maintained by <a href="https://github.com/zhanghuocheng">zhanghuocheng</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-148330236-1', 'auto');
+        ga('send', 'pageview');
+      </script>
+    
+  </body>
+</html>
