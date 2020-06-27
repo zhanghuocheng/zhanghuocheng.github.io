@@ -31,13 +31,20 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
+      <!-- {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
+        
+      {% endif %} -->
       {% if site.show_downloads %}
-        <a href="{{ site.url }}" class="btn">home</a>
-
+        <a href="{{ site.url }}" class="btn">主页</a>
+        <a href="#" class="btn">个人简介</a>
+        <a href="#" class="btn">运动</a>
+        <a href="#" class="btn">生活</a>
+        <a href="#" class="btn">计算机技术</a>
+        <a href="#" class="btn">哲学</a>
+        <a href="#" class="btn">方法论</a>
       {% endif %}
+
     </header>
 
     <main id="content" class="main-content" role="main">
