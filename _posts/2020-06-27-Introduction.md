@@ -101,3 +101,11 @@ layout: pages
 北航
 
 ![](http://qck2j2ro3.bkt.clouddn.com/test/WechatIMG14.jpeg?imagelim)
+
+
+
+
+
+## 微信-加我扫码
+
+![](http://qck2j2ro3.bkt.clouddn.com/test/20200627160150.png?imagelim)
