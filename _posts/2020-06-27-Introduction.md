@@ -90,19 +90,9 @@ layout: pages
 
 ![](http://qck2j2ro3.bkt.clouddn.com/test/20200627154110.png?imagelim)
 
+小💪
 
-
-游泳-游完后  小马甲估计是唯一能拿得出手的优点！！
-
-![](http://qck2j2ro3.bkt.clouddn.com/test/WechatIMG15.jpeg?imagelim)
-
-
-
-北航
-
-![](http://qck2j2ro3.bkt.clouddn.com/test/WechatIMG14.jpeg?imagelim)
-
-
+![](http://qck2j2ro3.bkt.clouddn.com/test/20200627162242.png?imagelim)
 
 
 
