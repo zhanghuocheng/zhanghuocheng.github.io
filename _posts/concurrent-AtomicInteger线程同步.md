@@ -1,4 +1,7 @@
-layout: pages
+
+---
+layout: default
+---
 
 
 

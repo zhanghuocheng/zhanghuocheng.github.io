@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-27T08:42:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zhanghuocheng.github.io</title><subtitle>运动·生活·计算机技术·哲学·方法论</subtitle><entry><title type="html">Github Gitpages Jekyll 构建blog实战</title><link href="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html" rel="alternate" type="text/html" title="Github Gitpages Jekyll 构建blog实战" /><published>2020-06-27T00:00:00+08:00</published><updated>2020-06-27T00:00:00+08:00</updated><id>http://localhost:4000/2020/06/27/github-gitpages-jekyll%20%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98</id><content type="html" xml:base="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html">&lt;h2 id=&quot;github-gitpages-jekyll-构建blog实战&quot;&gt;github-gitpages-jekyll 构建blog实战&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-27T09:22:33+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">天赋=时间x方法</title><subtitle>认知决定行为，行为映射认知</subtitle><entry><title type="html">Github Gitpages Jekyll 构建blog实战</title><link href="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html" rel="alternate" type="text/html" title="Github Gitpages Jekyll 构建blog实战" /><published>2020-06-27T00:00:00+08:00</published><updated>2020-06-27T00:00:00+08:00</updated><id>http://localhost:4000/2020/06/27/github-gitpages-jekyll%20%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98</id><content type="html" xml:base="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html">&lt;h2 id=&quot;github-gitpages-jekyll-构建blog实战&quot;&gt;github-gitpages-jekyll 构建blog实战&lt;/h2&gt;
 
 &lt;h2 id=&quot;1-目标&quot;&gt;1 目标&lt;/h2&gt;
 
@@ -35,17 +35,12 @@
       &lt;td&gt; &lt;/td&gt;
       &lt;td&gt;辅助，存储图片&lt;/td&gt;
     &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&quot;2-提交blog的过程&quot;&gt;2 提交blog的过程&lt;/h2&gt;
+&lt;h2 id=&quot;2-写完blog更新网站的过程中的动作分析3456自动完成&quot;&gt;2 写完blog–&amp;gt;更新网站的过程中的动作分析（3456自动完成）&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://qck2j2ro3.bkt.clouddn.com/test/20200627073705.png?imagelim&quot; alt=&quot;20200627073705&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://qck2j2ro3.bkt.clouddn.com/test/20200627085617.png?imagelim&quot; alt=&quot;20200627085617&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;3-过程详情&quot;&gt;3 过程详情&lt;/h2&gt;
 
@@ -65,84 +60,4 @@
  
  
  以上过程，都要有官方文档，配置简单
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">github-gitpages-jekyll 构建blog实战</summary></entry><entry><title type="html">Concurrent Atomicinteger线程同步</title><link href="http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html" rel="alternate" type="text/html" title="Concurrent Atomicinteger线程同步" /><published>2019-12-14T00:00:00+08:00</published><updated>2019-12-14T00:00:00+08:00</updated><id>http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5</id><content type="html" xml:base="http://localhost:4000/2019/12/14/concurrent-AtomicInteger%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5.html">&lt;p&gt;layout: pages&lt;/p&gt;
-
-&lt;p&gt;concurrent-AtomicInteger线程同步&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;sequenceDiagram
-participant 我（软件工程师）
-participant AtomicInteger
-participant unsafe
-participant jvm
-我（软件工程师）--&amp;gt;&amp;gt;AtomicInteger:创建对象，并发调用getAndIncrement
-AtomicInteger--&amp;gt;&amp;gt;unsafe: 传入当前对象，原始值，更改值
-unsafe--&amp;gt;&amp;gt;jvm:do while 循环调用指令compareAndSwapInt
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&quot;/Users/huochengzhang/Library/Application Support/typora-user-images/image-20191214154455677.png&quot; alt=&quot;image-20191214154455677&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;compareandswapint-这个原子操作的指令实现&quot;&gt;compareAndSwapInt 这个原子操作的指令实现&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;c/c++ 加上硬件支持的
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class AtomicTest {
-    AtomicInteger atomicInteger = new AtomicInteger(0);
-    static ExecutorService executorService = Executors.newFixedThreadPool(10);
-
-    public static void main(String[] args) {
-        AtomicTest atomicTest = new AtomicTest();
-        for (int i = 0; i &amp;lt; 1000; i++) {
-            executorService.submit(new Runnable() {
-                @Override
-                public void run() {
-
-                    //getAndIncrement() 这个函数怎么实现线程同步的
-                    atomicTest.atomicInteger.getAndIncrement();
-                    System.out.println(atomicTest.atomicInteger.get());
-                }
-            });
-
-        }
-    }
-
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;getandincrement&quot;&gt;getAndIncrement&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   public final int getAndIncrement() {
-        return unsafe.getAndAddInt(this, valueOffset, 1);
-    }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;this-当前atomicinteger对象&quot;&gt;this 当前AtomicInteger对象&lt;/h4&gt;
-
-&lt;h4 id=&quot;valueoffset-是获取atomicinteger对象的value通过反射&quot;&gt;valueOffset 是获取AtomicInteger对象的value通过反射&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; private static final long valueOffset;
-
-    static {
-        try {
-            valueOffset = unsafe.objectFieldOffset
-                (AtomicInteger.class.getDeclaredField(&quot;value&quot;));
-        } catch (Exception ex) { throw new Error(ex); }
-    }
-
-    private volatile int value;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;unsafe-class&quot;&gt;unsafe class&lt;/h3&gt;
-
-&lt;h4 id=&quot;通过native-方法compareandswapint-比较并交换-do-while&quot;&gt;通过native 方法compareAndSwapInt 比较并交换 do while&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   public final int getAndAddInt(Object var1, long var2, int var4) {
-        int var5;
-        do {
-            var5 = this.getIntVolatile(var1, var2);
-        } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
-
-        return var5;
-    }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">layout: pages</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">github-gitpages-jekyll 构建blog实战</summary></entry></feed>

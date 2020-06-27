@@ -1,3 +1,7 @@
+---
+layout: pages
+---
+
 ## github-gitpages-jekyll 构建blog实战
 
 
@@ -16,15 +20,14 @@
 | gitpages（域名+服务器） | https://pages.github.com/  |                  |
 | jekyll（网站模版）      | https://jekyllrb.com/docs/ |                  |
 | 七牛云                  |                            | 辅助，存储图片   |
-|                         |                            |                  |
 
 
 
-## 2 提交blog的过程
+## 2 写完blog-->更新网站的过程中的动作分析（3456自动完成）
+
+![20200627085617](http://qck2j2ro3.bkt.clouddn.com/test/20200627085617.png?imagelim)
 
 
-
-![20200627073705](http://qck2j2ro3.bkt.clouddn.com/test/20200627073705.png?imagelim)
 
 
 
