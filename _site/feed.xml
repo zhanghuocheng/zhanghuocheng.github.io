@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-27T08:30:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zhanghuocheng.github.io</title><subtitle>运动·生活·计算机技术·哲学·方法论</subtitle><entry><title type="html">Github Gitpages Jekyll 构建blog实战</title><link href="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html" rel="alternate" type="text/html" title="Github Gitpages Jekyll 构建blog实战" /><published>2020-06-27T00:00:00+08:00</published><updated>2020-06-27T00:00:00+08:00</updated><id>http://localhost:4000/2020/06/27/github-gitpages-jekyll%20%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98</id><content type="html" xml:base="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html">&lt;h2 id=&quot;github-gitpages-jekyll-构建blog实战&quot;&gt;github-gitpages-jekyll 构建blog实战&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-27T08:33:27+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zhanghuocheng.github.io</title><subtitle>运动·生活·计算机技术·哲学·方法论</subtitle><entry><title type="html">Github Gitpages Jekyll 构建blog实战</title><link href="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html" rel="alternate" type="text/html" title="Github Gitpages Jekyll 构建blog实战" /><published>2020-06-27T00:00:00+08:00</published><updated>2020-06-27T00:00:00+08:00</updated><id>http://localhost:4000/2020/06/27/github-gitpages-jekyll%20%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98</id><content type="html" xml:base="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html">&lt;h2 id=&quot;github-gitpages-jekyll-构建blog实战&quot;&gt;github-gitpages-jekyll 构建blog实战&lt;/h2&gt;
 
-&lt;h2 id=&quot;1-目标-完全免费&quot;&gt;1 目标-完全免费&lt;/h2&gt;
+&lt;h2 id=&quot;1-目标&quot;&gt;1 目标&lt;/h2&gt;
 
-&lt;p&gt;完成一个自己的博客，写完后只需提交，即可触发自动编译部署。&lt;/p&gt;
+&lt;p&gt;完成一个自己的博客，写完后只需提交，即可触发自动编译部署。(简单-完全免费)&lt;/p&gt;
 
 &lt;h6 id=&quot;博客的搭建过程&quot;&gt;博客的搭建过程&lt;/h6&gt;
 
@@ -59,6 +59,9 @@
  
  4 配置action
  https://jekyllrb.com/docs/continuous-integration/buddyworks/
+ 
+ 5 在mk中添加图片的格式
+ ![20200627073705](http://qck2j2ro3.bkt.clouddn.com/test/20200627073705.png?imagelim)
  
  
  以上过程，都要有官方文档，配置简单

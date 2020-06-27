@@ -2,9 +2,9 @@
 
 
 
-## 1 目标-完全免费
+## 1 目标
 
-完成一个自己的博客，写完后只需提交，即可触发自动编译部署。
+完成一个自己的博客，写完后只需提交，即可触发自动编译部署。(简单-完全免费)
 
 
 
@@ -41,6 +41,9 @@
  
  4 配置action
  https://jekyllrb.com/docs/continuous-integration/buddyworks/
+ 
+ 5 在mk中添加图片的格式
+ ![20200627073705](http://qck2j2ro3.bkt.clouddn.com/test/20200627073705.png?imagelim)
  
  
  以上过程，都要有官方文档，配置简单
