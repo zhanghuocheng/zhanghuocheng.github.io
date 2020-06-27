@@ -26,12 +26,7 @@
 
 ![20200627073705](http://qck2j2ro3.bkt.clouddn.com/test/20200627073705.png?imagelim)
 
-```sequence
-张火成-->git:写博客/commit
-git-->Action:自动构建并推送
-Action-->gitpages服务器:更新静态页面
-gitpages服务器-->张火成:看到了刚提交的博客
-```
+
 
 ## 3 过程详情
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-27T08:28:07+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zhanghuocheng.github.io</title><subtitle>运动·生活·计算机技术·哲学·方法论</subtitle><entry><title type="html">Github Gitpages Jekyll 构建blog实战</title><link href="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html" rel="alternate" type="text/html" title="Github Gitpages Jekyll 构建blog实战" /><published>2020-06-27T00:00:00+08:00</published><updated>2020-06-27T00:00:00+08:00</updated><id>http://localhost:4000/2020/06/27/github-gitpages-jekyll%20%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98</id><content type="html" xml:base="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html">&lt;h2 id=&quot;github-gitpages-jekyll-构建blog实战&quot;&gt;github-gitpages-jekyll 构建blog实战&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-27T08:30:40+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">zhanghuocheng.github.io</title><subtitle>运动·生活·计算机技术·哲学·方法论</subtitle><entry><title type="html">Github Gitpages Jekyll 构建blog实战</title><link href="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html" rel="alternate" type="text/html" title="Github Gitpages Jekyll 构建blog实战" /><published>2020-06-27T00:00:00+08:00</published><updated>2020-06-27T00:00:00+08:00</updated><id>http://localhost:4000/2020/06/27/github-gitpages-jekyll%20%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98</id><content type="html" xml:base="http://localhost:4000/2020/06/27/github-gitpages-jekyll-%E6%9E%84%E5%BB%BAblog%E5%AE%9E%E6%88%98.html">&lt;h2 id=&quot;github-gitpages-jekyll-构建blog实战&quot;&gt;github-gitpages-jekyll 构建blog实战&lt;/h2&gt;
 
 &lt;h2 id=&quot;1-目标-完全免费&quot;&gt;1 目标-完全免费&lt;/h2&gt;
 
@@ -46,12 +46,6 @@
 &lt;h2 id=&quot;2-提交blog的过程&quot;&gt;2 提交blog的过程&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://qck2j2ro3.bkt.clouddn.com/test/20200627073705.png?imagelim&quot; alt=&quot;20200627073705&quot; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-sequence&quot;&gt;张火成--&amp;gt;git:写博客/commit
-git--&amp;gt;Action:自动构建并推送
-Action--&amp;gt;gitpages服务器:更新静态页面
-gitpages服务器--&amp;gt;张火成:看到了刚提交的博客
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;3-过程详情&quot;&gt;3 过程详情&lt;/h2&gt;
 
