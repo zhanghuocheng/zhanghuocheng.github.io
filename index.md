@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-### 认知 
+### 知·行
 
 <ul>
   {% for post in site.posts %}
