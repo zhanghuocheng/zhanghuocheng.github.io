@@ -24,7 +24,7 @@
 
 
 
-![](qck2j2ro3.bkt.clouddn.com/test/20200627073705.png?imagelim)
+![20200627073705](http://qck2j2ro3.bkt.clouddn.com/test/20200627073705.png?imagelim)
 
 ```sequence
 张火成-->git:写博客/commit
