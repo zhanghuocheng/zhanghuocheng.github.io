@@ -90,12 +90,8 @@ layout: pages
 
 ![](http://qck2j2ro3.bkt.clouddn.com/test/20200627154110.png?imagelim)
 
-小💪
-
-![](http://qck2j2ro3.bkt.clouddn.com/test/20200627162242.png?imagelim)
 
 
-
-## 微信-加我扫码
+## 微信-加我扫码  
 
 ![](http://qck2j2ro3.bkt.clouddn.com/test/20200627160150.png?imagelim)
