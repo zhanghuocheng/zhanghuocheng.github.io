@@ -92,6 +92,6 @@ layout: pages
 
 
 
-## 微信-加我扫码  
+## 有问题联系微信  
 
 ![](http://qck2j2ro3.bkt.clouddn.com/test/20200627160150.png?imagelim)
