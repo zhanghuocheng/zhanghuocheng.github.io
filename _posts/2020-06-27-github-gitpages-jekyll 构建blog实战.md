@@ -25,7 +25,7 @@ layout: pages
 
 ## 2 写完blog-->更新网站的过程中的动作分析（3456自动完成）
 
-![20200627085617](http://qck2j2ro3.bkt.clouddn.com/test/20200627085617.png?imagelim)
+![20200627085617](/images/1596353930081.jpg)
 
 
 
