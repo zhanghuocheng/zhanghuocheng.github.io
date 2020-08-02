@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-02T15:05:47+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">天赋=时间x方法</title><subtitle>认知决定行为，行为映射认知</subtitle><entry><title type="html">方法论</title><link href="http://localhost:4000/2020/07/13/%E6%96%B9%E6%B3%95%E8%AE%BA.html" rel="alternate" type="text/html" title="方法论" /><published>2020-07-13T00:00:00+08:00</published><updated>2020-07-13T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/13/%E6%96%B9%E6%B3%95%E8%AE%BA</id><content type="html" xml:base="http://localhost:4000/2020/07/13/%E6%96%B9%E6%B3%95%E8%AE%BA.html">&lt;h4 id=&quot;知识背景&quot;&gt;知识背景&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-02T15:30:24+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">天赋=时间x方法</title><subtitle>认知决定行为，行为映射认知</subtitle><entry><title type="html">方法论</title><link href="http://localhost:4000/2020/07/13/%E6%96%B9%E6%B3%95%E8%AE%BA.html" rel="alternate" type="text/html" title="方法论" /><published>2020-07-13T00:00:00+08:00</published><updated>2020-07-13T00:00:00+08:00</updated><id>http://localhost:4000/2020/07/13/%E6%96%B9%E6%B3%95%E8%AE%BA</id><content type="html" xml:base="http://localhost:4000/2020/07/13/%E6%96%B9%E6%B3%95%E8%AE%BA.html">&lt;h4 id=&quot;知识背景&quot;&gt;知识背景&lt;/h4&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;分工决定高效
 天赋=时间x方法 
@@ -94,7 +94,7 @@
  以上过程，都要有官方文档，配置简单
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">github-gitpages-jekyll 构建blog实战</summary></entry><entry><title type="html">个人简介</title><link href="http://localhost:4000/2020/06/27/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B.html" rel="alternate" type="text/html" title="个人简介" /><published>2020-06-27T00:00:00+08:00</published><updated>2020-06-27T00:00:00+08:00</updated><id>http://localhost:4000/2020/06/27/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B</id><content type="html" xml:base="http://localhost:4000/2020/06/27/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B.html">&lt;h1 id=&quot;信仰&quot;&gt;信仰&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/1596351060606.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/1596351060606.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-基本介绍&quot;&gt;1 基本介绍&lt;/h2&gt;
 
@@ -115,8 +115,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;3--我的一天&quot;&gt;3  我的一天&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://qck2j2ro3.bkt.clouddn.com/test/20200627153557.png?imagelim&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/1596351098104.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;原则：
 1 健康，高效为原则（即能把工作上的事完成，
@@ -161,7 +160,7 @@
 
 &lt;h2 id=&quot;4-生活驱动&quot;&gt;4 生活驱动&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://qck2j2ro3.bkt.clouddn.com/test/20200627153649.png?imagelim&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/1596351098104.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;5--饮食&quot;&gt;5  饮食&lt;/h2&gt;
 
@@ -176,4 +175,4 @@
 
 &lt;h2 id=&quot;有问题联系微信&quot;&gt;有问题联系微信&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://qck2j2ro3.bkt.clouddn.com/test/20200627160150.png?imagelim&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">信仰</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/images/1596353377076.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">信仰</summary></entry></feed>
