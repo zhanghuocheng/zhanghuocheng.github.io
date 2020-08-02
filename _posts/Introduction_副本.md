@@ -22,7 +22,7 @@
 
 ## 3  我的一天
 
-
+![image-20200802085725297](/Users/yp-m-2598/Library/Application Support/typora-user-images/image-20200802085725297.png)
 
 ```sequence
 休息态-->运动态:起床小技巧，让起床动作在意识之前发生
