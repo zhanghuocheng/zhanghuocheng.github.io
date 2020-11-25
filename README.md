@@ -7,3 +7,7 @@ https://jekyllrb.com/docs/
 bundle exec jekyll serve
 
 3 访问 http://127.0.0.1:4000//
+
+
+todo//
+图片静态资源化
