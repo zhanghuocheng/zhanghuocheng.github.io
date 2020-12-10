@@ -2,8 +2,8 @@
 layout: pages
 ---
 
-
-[TOC]
+*  目录
+{:toc}
 
 StopWatch-spring框架中一个简单的工具类
 

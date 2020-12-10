@@ -1,6 +1,8 @@
 ---
 layout: pages
 ---
+*  目录
+{:toc}
 
 ## github-gitpages-jekyll 构建blog实战
 
