@@ -1,6 +1,8 @@
 ---
 layout: pages
 ---
+*  目录
+{:toc}
 ### Terraform学习笔记
 
 ### 1 背景知识
