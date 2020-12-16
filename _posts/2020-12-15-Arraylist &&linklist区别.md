@@ -1,3 +1,9 @@
+---
+layout: pages
+---
+
+*  目录
+{:toc}
 Arraylist &&linklist区别
 
 
