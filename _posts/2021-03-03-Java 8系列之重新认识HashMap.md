@@ -1,6 +1,16 @@
 # [Java 8系列之重新认识HashMap](https://tech.meituan.com/2016/06/24/java-hashmap.html)
 
-2016年06月24日 作者: 前利 [文章链接](https://tech.meituan.com/2016/06/24/java-hashmap.html) 14340字 29分钟阅读
+总结
+
+```
+1 hashmap  1.8以前 数据：链表   1.8以后当链表长度大于8则 
+
+1. 扩容是一个特别耗性能的操作，所以当程序员在使用HashMap的时候，估算map的大小，初始化的时候给一个大致的数值，避免map进行频繁的扩容。
+2. 负载因子是可以修改的，也可以大于1，但是建议不要轻易修改，除非情况非常特殊。
+3. HashMap是线程不安全的，不要在并发的环境中同时操作HashMap，建议使用ConcurrentHashMap。
+4. JDK1.8引入红黑树大程度优化了HashMap的性能。
+5. 还没升级JDK1.8的，现在开始升级吧。HashMap的性能提升仅仅是JDK1.8的冰山一角。
+```
 
 ## 摘要
 
