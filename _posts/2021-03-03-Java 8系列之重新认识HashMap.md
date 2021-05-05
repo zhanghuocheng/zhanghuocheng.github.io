@@ -1,11 +1,31 @@
 ---
 layout: pages
 ---
-# [Java 8系列之重新认识HashMap](https://tech.meituan.com/2016/06/24/java-hashmap.html)
+# Java 8系列之重新认识HashMap
+
+```
+https://tech.meituan.com/2016/06/24/java-hashmap.html
+```
 
 总结
 
 ```
+参数	
+1 最大容量-数组长度 默认是16，必须是2n次幂
+2 负载因子 默认0.75  
+
+为啥是0.75 在时间和空间做了权衡，如果>1	,则节省了空间，但是在时间维度增加成本(GET PULL)
+
+链表--红黑树
+1 链表长度大于8 2数组长度大于64
+2 红黑树小于6时 红黑树转链表
+
+hashmap扩容根据临界值
+临界值（threshold） = 负载因子（loadFactor） * 容量（capacity）
+
+解决hash冲突原因 - 1 容量小 2 hash算法不够好
+
+
 1 hashmap  1.8以前 数据：链表   1.8以后当链表长度大于8则 
 
 1. 扩容是一个特别耗性能的操作，所以当程序员在使用HashMap的时候，估算map的大小，初始化的时候给一个大致的数值，避免map进行频繁的扩容。
