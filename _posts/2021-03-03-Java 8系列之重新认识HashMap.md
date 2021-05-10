@@ -23,9 +23,6 @@ https://tech.meituan.com/2016/06/24/java-hashmap.html
 hashmap扩容根据临界值
 临界值（threshold） = 负载因子（loadFactor） * 容量（capacity）
 
-解决hash冲突原因 - 1 容量小 2 hash算法不够好
-
-
 1 hashmap  1.8以前 数据：链表   1.8以后当链表长度大于8则 
 
 1. 扩容是一个特别耗性能的操作，所以当程序员在使用HashMap的时候，估算map的大小，初始化的时候给一个大致的数值，避免map进行频繁的扩容。
