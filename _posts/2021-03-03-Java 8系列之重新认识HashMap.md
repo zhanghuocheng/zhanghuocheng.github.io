@@ -3,6 +3,101 @@ layout: pages
 ---
 # Java 8系列之重新认识HashMap
 
+## 1 集合
+
+#### 1 hashmap &&currentHashmap
+
+currentHashmap
+
+```
+在加锁上 1 读加的是volatile
+
+写根据数据结构加锁
+1 没有链表or树  cas 乐观锁
+2 有链表和树 使用的是对头节点加锁
+```
+
+
+
+```
+hashmap初始化大小为啥是2的n次幂？
+```
+
+```
+当HashMap的容量是2的n次幂时，(n-1)的2进制也就是1111111***111这样形式的，这样与添加元素的hash值进行位运算时，能够充分的散列，使得添加的元素均匀分布在HashMap的每个位置上，减少hash碰撞，下面举例进行说明。
+```
+
+
+
+```
+参数	
+1 最大容量-数组长度 默认是16，必须是2n次幂
+2 负载因子 默认0.75  
+
+为啥是0.75 在时间和空间做了权衡，如果>1	,则节省了空间，但是在时间维度增加成本(GET PULL)
+
+链表--红黑树
+1 链表长度大于8 2数组长度大于64
+2 红黑树小于6时 红黑树转链表
+
+hashmap扩容根据临界值
+临界值（threshold） = 负载因子（loadFactor） * 容量（capacity）
+
+1 hashmap  1.8以前 数据：链表   1.8以后当链表长度大于8则 
+
+1. 扩容是一个特别耗性能的操作，所以当程序员在使用HashMap的时候，估算map的大小，初始化的时候给一个大致的数值，避免map进行频繁的扩容。
+2. 负载因子是可以修改的，也可以大于1，但是建议不要轻易修改，除非情况非常特殊。
+3. HashMap是线程不安全的，不要在并发的环境中同时操作HashMap，建议使用ConcurrentHashMap。
+4. JDK1.8引入红黑树大程度优化了HashMap的性能。
+5. 还没升级JDK1.8的，现在开始升级吧。HashMap的性能提升仅仅是JDK1.8的冰山一角。主要就是一个put方法
+```
+
+![img](https://awps-assets.meituan.net/mit-x/blog-images-bundle-2016/d669d29c.png)
+
+```
+    final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
+                   boolean evict) {
+        Node<K,V>[] tab; Node<K,V> p; int n, i;
+        if ((tab = table) == null || (n = tab.length) == 0)  判断数组1⃣️
+            n = (tab = resize()).length; yes2⃣️ 扩容 
+        if ((p = tab[i = (n - 1) & hash]) == null)
+            tab[i] = newNode(hash, key, value, null); 3⃣️ 插入
+        else {
+            Node<K,V> e; K k;
+            if (p.hash == hash &&
+                ((k = p.key) == key || (key != null && key.equals(k)))) 5⃣️表key是否存在
+                e = p;  6⃣️存在直接覆盖
+            else if (p instanceof TreeNode) 7⃣️判断是否是红黑树 
+                e = ((TreeNode<K,V>)p).putTreeVal(this, tab, hash, key, value); 8⃣️是 直接插入
+            else {
+                for (int binCount = 0; ; ++binCount) { 9⃣️ 链表插入
+                    if ((e = p.next) == null) {
+                        p.next = newNode(hash, key, value, null);
+                        if (binCount >= TREEIFY_THRESHOLD - 1) // -1 for 1st  //🔟判断是否需要转红黑树
+                            treeifyBin(tab, hash); 1⃣️1⃣️ 转红黑树
+                        break;
+                    }
+                    if (e.hash == hash &&
+                        ((k = e.key) == key || (key != null && key.equals(k))))
+                        break;
+                    p = e;
+                }
+            }
+            if (e != null) { // existing mapping for key
+                V oldValue = e.value;
+                if (!onlyIfAbsent || oldValue == null)
+                    e.value = value;
+                afterNodeAccess(e);
+                return oldValue;
+            }
+        }
+        ++modCount;
+        if (++size > threshold) 4⃣️ 判断是否需要扩容
+            resize();
+        afterNodeInsertion(evict);
+        return null;
+```
+
 
 
 ```
@@ -540,3 +635,28 @@ class Key implements Comparable<Key> {
 3. HashMap是线程不安全的，不要在并发的环境中同时操作HashMap，建议使用ConcurrentHashMap。
 4. JDK1.8引入红黑树大程度优化了HashMap的性能。
 5. 还没升级JDK1.8的，现在开始升级吧。HashMap的性能提升仅仅是JDK1.8的冰山一角。
+
+
+
+jdk1.8
+
+```
+1 红黑树 
+2 废弃segment分段锁
+```
+
+3.如何将非常多的数据高效快速的插入到concurrenthashmap中？✅
+
+```
+1第一个是扩容操作，主要还是要通过配置合理的容量大小和扩容因子，尽可能减少扩容事件的发生；
+2第二个锁资源的争夺，在put方法中会使用synchonized对头节点进行加锁，而锁本身也是分等级的，因此我们的主要思路就是尽可能的避免锁等级。所以，针对第二点，我们可以将数据通过通过ConcurrentHashMap的spread方法进行预处理，这样我们可以将存在hash冲突的数据放在一个组里面，每个组都使用单线程进行put操作，这样的话可以保证锁仅停留在偏向锁这个级别，不会升级，从而提升效率
+```
+
+jdk1.7
+
+```
+1 基于分段锁 Segment 集成 ReentrantLock  锁粒度的segment
+```
+
+![image-20210518151307724](../images/image-20210518151307724.png)
+
