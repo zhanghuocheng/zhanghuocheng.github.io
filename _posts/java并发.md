@@ -1,0 +1,46 @@
+java并发
+
+
+
+java并发实战
+
+```
+volatile 使用场景：某个操作的状态的变化。不能保证count++的原子性
+
+coyponWriteArrayList 替代arrayList
+
+5.0 新增queue blockQueue currentLinkedQueue
+
+blockQueue 如果队列为空，获取元素的线程一致等待。队列满了 put方法将阻塞
+
+6 新增deque 双端对垒  arraydeque  linkedBlockDeque
+
+同步工具类，提供状态，通过状态的改变决定工具类中的线程是执行还是等待
+
+信号量 ：控制同事访问某个资源的数量
+
+线程池类型
+固定 有最大值和最小值 默认是linkedblockqueue 队列可以无线增加s
+可缓存的  使用的同步移交队列 
+单例  默认是linkedblockqueue 队列可以无线增加
+定时：可延时或指定时间
+
+默认是linkedblockqueue 队列可以无线增加
+
+
+队列的类型  有界队列 无界队列 同步移交
+
+cas可能出现的问题 ABA问题 解决办法 加版本号
+
+happens-before：JMM为程序中所有操作定义了一个偏序关系
+规则包括：
+程序顺序规则：程序中A操作在B操作之前，那么线程A操作将在B操作之前
+监视器锁规则：解锁必须在加锁之前
+volitale：对volitale的写在读之前
+线程启动规则:start方法的调用必须在任何操作之前
+线程结束规则：线程所有操作都必须发生在其他线程监测到该线程结束之前。
+中断规则:
+终结器规则：
+传递性：
+```
+
