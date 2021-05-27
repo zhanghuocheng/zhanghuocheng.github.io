@@ -658,5 +658,5 @@ jdk1.7
 1 基于分段锁 Segment 集成 ReentrantLock  锁粒度的segment
 ```
 
-![image-20210518151307724](../images/image-20210518151307724.png)
+![image-20210518151307724](/images/image-20210518151307724.png)
 
