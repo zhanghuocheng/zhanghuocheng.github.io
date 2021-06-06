@@ -1,0 +1,13 @@
+restful接口
+
+restful接口类型
+
+
+
+```
+GET 
+POST
+PUT 
+DELETE 
+```
+
