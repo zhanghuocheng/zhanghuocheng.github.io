@@ -1,3 +1,6 @@
+---
+layout: pages
+---
 springcloud
 
 ### 注册中心 和zk的区别
