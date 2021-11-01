@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: page
 ---
 # Java 8系列之重新认识HashMap
 
