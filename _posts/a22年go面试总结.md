@@ -23,6 +23,13 @@ redis unlock的命令
 面试时间：2022-02-16 15:00 ​
 
 面试链接：https://f8y4v1rln8.feishu.cn/hire/bridge/video/interviewee/f14c7344-8a21-4940-948a-ca1bdb78bc6c（飞书）​
+
+mysql怎么实现不可重复读
+一致性视图 
+内存逃逸
+go锁的读锁 
+go内存模型 
+channel数据结构 如何知道关闭通道 
 ```
 
 2022-02-17 
