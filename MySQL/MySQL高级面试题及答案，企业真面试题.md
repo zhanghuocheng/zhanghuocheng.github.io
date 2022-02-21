@@ -65,14 +65,6 @@
 **6、** 跨分片的排序分页问题（后台加大pagesize处理？）
 
 
-### [4、什么情况下设置了索引但无法使用](https://gitee.com/souyunku/DevBooks/blob/master/docs/MySQL/MySQL高级面试题及答案，企业真面试题.md#4什么情况下设置了索引但无法使用)  
-
-
-1.以“%”开头的LIKE语句，模糊匹配
-
-2\、OR语句前后没有同时使用索引
-
-3\、数据类型出现隐式转化（如varchar不加单引号的话可能会自动转换为int型）
 
 
 ### [5、如何删除索引](https://gitee.com/souyunku/DevBooks/blob/master/docs/MySQL/MySQL高级面试题及答案，企业真面试题.md#5如何删除索引)  
@@ -272,20 +264,3 @@ explain表的结果，type=index，索引物理文件全扫描，速度非常慢
 ### 27、什么是触发器？触发器的使用场景有哪些？
 ### 28、简述有哪些索引和作用
 ### 29、数据库中的事务是什么?
-
-
-
-
-<a href="https://www.souyunku.com/?p=397" target="_blank"  ><img src="https://www.souyunku.com/wp-content/uploads/idea/zhengban.png" ></a>
-## [全部答案，更新日期：2月19日，直接下载吧！](https://gitee.com/souyunku/DevBooks/blob/master/docs/daan.md)
-
-### 下载链接：[全部答案，整理好了](https://gitee.com/souyunku/DevBooks/blob/master/docs/daan.md)
-
-
-
-
-## 新增：高清PDF：172份，7701页，最新整理
-
-[![大厂面试题](https://www.souyunku.com/wp-content/uploads/weixin/mst.png "架构师专栏")](https://www.souyunku.com/wp-content/uploads/weixin/githup-weixin.png "架构师专栏")
-
-[![大厂面试题](https://www.souyunku.com/wp-content/uploads/weixin/githup-weixin.png "架构师专栏")](https://www.souyunku.com/wp-content/uploads/weixin/githup-weixin.png "架构师专栏")

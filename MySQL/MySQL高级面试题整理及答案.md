@@ -185,20 +185,3 @@ innodb两种日志redo和undo。
 ### 27、使用悲观锁
 ### 28、Myql中的事务回滚机制概述
 ### 29、说说MySQL 的基础架构图
-
-
-
-
-<a href="https://www.souyunku.com/?p=397" target="_blank"  ><img src="https://www.souyunku.com/wp-content/uploads/idea/zhengban.png" ></a>
-## [全部答案，更新日期：2月19日，直接下载吧！](https://gitee.com/souyunku/DevBooks/blob/master/docs/daan.md)
-
-### 下载链接：[全部答案，整理好了](https://gitee.com/souyunku/DevBooks/blob/master/docs/daan.md)
-
-
-
-
-## 新增：高清PDF：172份，7701页，最新整理
-
-[![大厂面试题](https://www.souyunku.com/wp-content/uploads/weixin/mst.png "架构师专栏")](https://www.souyunku.com/wp-content/uploads/weixin/githup-weixin.png "架构师专栏")
-
-[![大厂面试题](https://www.souyunku.com/wp-content/uploads/weixin/githup-weixin.png "架构师专栏")](https://www.souyunku.com/wp-content/uploads/weixin/githup-weixin.png "架构师专栏")

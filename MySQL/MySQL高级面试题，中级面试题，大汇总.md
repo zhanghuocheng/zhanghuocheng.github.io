@@ -1,10 +1,3 @@
-# MySQL高级面试题，中级面试题，大汇总
-
-<a href="https://www.souyunku.com/?p=397" target="_blank"  ><img src="https://www.souyunku.com/wp-content/uploads/idea/zhengban.png" ></a>
-### 全部答案，更新日期：2月19日，直接下载吧！
-
-### 下载链接：[高清172份，累计 7701 页大厂面试题  PDF](https://gitee.com/souyunku/DevBooks/blob/master/docs/index.md)
-
 
 
 ### [1、int(20)中20的涵义](https://gitee.com/souyunku/DevBooks/blob/master/docs/MySQL/MySQL高级面试题，中级面试题，大汇总.md#1int20中20的涵义)  
@@ -13,18 +6,6 @@
 **1、** 是指显示字符的长度。20表示最大显示宽度为20，但仍占4字节存储，存储范围不变；
 
 **2、** 不影响内部存储，只是影响带 zerofill 定义的 int 时，前面补多少个 0，易于报表展示
-
-
-### [2、为什么索引结构默认使用B+Tree，而不是Hash，二叉树，红黑树？](https://gitee.com/souyunku/DevBooks/blob/master/docs/MySQL/MySQL高级面试题，中级面试题，大汇总.md#2为什么索引结构默认使用b+tree而不是hash二叉树红黑树)  
-
-
-B+tree：因为B树不管叶子节点还是非叶子节点，都会保存数据，这样导致在非叶子节点中能保存的指针数量变少（有些资料也称为扇出），指针少的情况下要保存大量数据，只能增加树的高度，导致IO操作变多，查询性能变低；
-
-Hash：虽然可以快速定位，但是没有顺序，IO复杂度高。
-
-二叉树：树的高度不均匀，不能自平衡，查找效率跟数据有关（树的高度），并且IO代价高。
-
-红黑树：树的高度随着数据量增加而增加，IO代价高。
 
 
 ### [3、MySQL里记录货币用什么字段类型好](https://gitee.com/souyunku/DevBooks/blob/master/docs/MySQL/MySQL高级面试题，中级面试题，大汇总.md#3mysql里记录货币用什么字段类型好)  
@@ -54,11 +35,6 @@ salary DECIMAL(9,2)
 ### [5、从锁的类别角度讲，MySQL都有哪些锁呢？](https://gitee.com/souyunku/DevBooks/blob/master/docs/MySQL/MySQL高级面试题，中级面试题，大汇总.md#5从锁的类别角度讲mysql都有哪些锁呢)  
 
 
-从锁的类别上来讲，有共享锁和排他锁。
-
-共享锁: 又叫做读锁。当用户要进行数据的读取时，对数据加上共享锁。共享锁可以同时加上多个。
-
-排他锁: 又叫做写锁。当用户要进行数据的写入时，对数据加上排他锁。排他锁只可以加一个，他和其他的排他锁，共享锁都相斥。
 
 
 ### [6、索引失效情况？ ==校验SQL语句是否使用了索引方式为：](https://gitee.com/souyunku/DevBooks/blob/master/docs/MySQL/MySQL高级面试题，中级面试题，大汇总.md#6索引失效情况-校验sql语句是否使用了索引方式为：)  
@@ -158,20 +134,3 @@ g、书写高效率的SQL。比如 SELECT * FROM TABEL 改为 SELECT field_1, fi
 ### 27、存储引擎选择
 ### 28、drop、delete与truncate的区别
 ### 29、什么是脏读？幻读？不可重复读？
-
-
-
-
-<a href="https://www.souyunku.com/?p=397" target="_blank"  ><img src="https://www.souyunku.com/wp-content/uploads/idea/zhengban.png" ></a>
-## [全部答案，更新日期：2月19日，直接下载吧！](https://gitee.com/souyunku/DevBooks/blob/master/docs/daan.md)
-
-### 下载链接：[全部答案，整理好了](https://gitee.com/souyunku/DevBooks/blob/master/docs/daan.md)
-
-
-
-
-## 新增：高清PDF：172份，7701页，最新整理
-
-[![大厂面试题](https://www.souyunku.com/wp-content/uploads/weixin/mst.png "架构师专栏")](https://www.souyunku.com/wp-content/uploads/weixin/githup-weixin.png "架构师专栏")
-
-[![大厂面试题](https://www.souyunku.com/wp-content/uploads/weixin/githup-weixin.png "架构师专栏")](https://www.souyunku.com/wp-content/uploads/weixin/githup-weixin.png "架构师专栏")
