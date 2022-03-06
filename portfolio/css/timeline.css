@@ -150,7 +150,7 @@ body, html {
     display: block;
     width: 40px;
     height: 40px;
-    background: url("../images/logo-vue.png") 50% 50% no-repeat;
+    background: url("/images/logo-vue.png") 50% 50% no-repeat;
     background-size: 20px;
 }
 
@@ -159,7 +159,7 @@ body, html {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../images/logo-kissy.png") 50% 50% no-repeat;
+	background: url("/images/logo-kissy.png") 50% 50% no-repeat;
 	background-size: 20px;
 }
 
@@ -168,7 +168,7 @@ body, html {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../images/logo-jquery.png") 50% 50% no-repeat;
+	background: url("/images/logo-jquery.png") 50% 50% no-repeat;
 	background-size: 20px;
 }
 
@@ -177,7 +177,7 @@ body, html {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../images/logo-react.png") 50% 50% no-repeat;
+	background: url("/images/logo-react.png") 50% 50% no-repeat;
 	background-size: 22px;
 }
 
@@ -186,7 +186,7 @@ body, html {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../images/logo-spring-framework.png") 50% 50% no-repeat;
+	background: url("/images/logo-spring-framework.png") 50% 50% no-repeat;
 	background-size: 22px;
 }
 
@@ -195,7 +195,7 @@ body, html {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../images/logo-spring-boot.png") 50% 50% no-repeat;
+	background: url("/images/logo-spring-boot.png") 50% 50% no-repeat;
 	background-size: 22px;
 }
 
@@ -204,7 +204,7 @@ body, html {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../images/logo-spring-cloud.png") 50% 50% no-repeat;
+	background: url("/images/logo-spring-cloud.png") 50% 50% no-repeat;
 	background-size: 22px;
 }
 
@@ -213,7 +213,7 @@ body, html {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../images/logo-spring-data-flow.png") 50% 50% no-repeat;
+	background: url("/images/logo-spring-data-flow.png") 50% 50% no-repeat;
 	background-size: 22px;
 }
 
@@ -222,7 +222,7 @@ body, html {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../images/logo-dubbo.png") 50% 50% no-repeat;
+	background: url("/images/logo-dubbo.png") 50% 50% no-repeat;
 	background-size: 22px;
 }
 
@@ -231,7 +231,7 @@ body, html {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../images/logo-sofastacks.png") 50% 50% no-repeat;
+	background: url("/images/logo-sofastacks.png") 50% 50% no-repeat;
 	background-size: 22px;
 }
 
