@@ -1,3 +1,6 @@
+---
+layout: page
+---
 ## ConcurrentHashMap源码分析(二)
 
 ### 一、jdk1.8容器初始化
